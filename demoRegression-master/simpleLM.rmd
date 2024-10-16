@@ -1,6 +1,6 @@
 ---
 title: "simpleRegress"
-author: "put your name here"
+author: "Jovygomez"
 date: "Fall 2020"
 output: html_document
 ---
@@ -27,6 +27,67 @@ abline(simp)
 summary.lm(simp)
 ```
 
+The adjusted R-squared is 0.7476
+
+
+## Model LENGTH ~ AGE  this is an example  
+
+```{r}
+simp <- lm(LENGTH~AGE,data=bears)
+plot(LENGTH~AGE,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+The adjusted R-squared is 0.5073
+
+## Model LENGTH ~ HEADLEN this is an example  
+
+```{r}
+simp <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+The adjusted R-squared is 0.8434
+
+## Model LENGTH ~ HEADWTH this is an example  
+
+```{r}
+simp <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+The adjusted R-squared is 0.5321
+
+## Model LENGTH ~ CHEST  this is an example  
+
+```{r}
+simp <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+The adjusted R-squared is 0.7869
+
+## Model LENGTH ~ WEIGHT  this is an example  
+
+```{r}
+simp <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+The adjusted R-squared is 0.7423
 
 ## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
+
+Comparing all of the models that predict LENGTH other than Neck. Ranking (from worst to best):
+
+AGE (Adjusted R² = 0.5073). 
+HEADWTH (Adjusted R² = 0.5321). 
+WEIGHT(Adjusted R² = 0.7423).  
+CHEST (Adjusted R² = 0.7869).  
+HEADLEN (Adjusted R² = 0.8434). 
 
