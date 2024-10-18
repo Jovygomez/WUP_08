@@ -85,9 +85,10 @@ The adjusted R-squared is 0.7423
 
 Comparing all of the models that predict LENGTH other than Neck. Ranking (from worst to best):
 
-AGE (Adjusted R² = 0.5073). 
-HEADWTH (Adjusted R² = 0.5321). 
-WEIGHT(Adjusted R² = 0.7423).  
+
+AGE (Adjusted R² = 0.5073).   
+HEADWTH (Adjusted R² = 0.5321).    
+WEIGHT(Adjusted R² = 0.7423)  
 CHEST (Adjusted R² = 0.7869).  
 HEADLEN (Adjusted R² = 0.8434). 
 
